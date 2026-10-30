@@ -1,0 +1,486 @@
+import type { SiteContent } from "@/types/site";
+
+const local = (en: string, zh: string) => ({ en, zh });
+
+export const siteContent: SiteContent = {
+  typography: {
+    adobeWebProject: {
+      stylesheetUrl: "",
+      fontFamily: "gallery-modern",
+    },
+  },
+  preferences: {
+    storageKey: "guoyixuan-portfolio-2",
+    defaultLocale: "zh",
+    defaultTheme: "dark",
+  },
+  layout: {
+    work: "balanced-grid",
+    lab: "mixed-grid",
+  },
+  person: {
+    name: local("Yixuan Guo", "郭一萱"),
+    role: local("Product thinker, content operator & creative maker", "产品 + 运营 + 创作"),
+    support: local("Turning ideas into stories, content and interactive experiences", "用视觉和视频讲好一个故事"),
+    email: "15531498891@163.com",
+    location: local("Beijing", "北京"),
+  },
+  navigation: {
+    work: local("Work", "作品"),
+    lab: local("Lab", "实验"),
+    about: local("About", "关于"),
+    resume: local("Resume", "简历"),
+    sayHi: local("Say Hi", "联系我"),
+    menu: local("Open menu", "打开菜单"),
+    close: local("Close menu", "关闭菜单"),
+    themeLight: local("Switch to light mode", "切换为浅色模式"),
+    themeDark: local("Switch to dark mode", "切换为深色模式"),
+  },
+  sections: {
+    portfolioLabel: local("Portfolio", "作品集"),
+    selectedWork: local("Selected work", "精选作品"),
+    workIntro: local("Selected projects across operations, editorial and creative media", "横跨运营、采编与创意媒体的精选项目"),
+    labTitle: local("Things I", "这些是我"),
+    labAccent: local("made for fun.", "兴趣驱动做出来的。"),
+    labIntro: local("Photography, music and side experiments", "摄影、音乐与零散实验"),
+    aboutLabel: local("About", "关于"),
+    viewWork: local("View my work", "查看作品"),
+    aboutMe: local("About me", "关于我"),
+    sayHello: local("Say hello", "打个招呼"),
+    downloadResume: local("Download resume", "下载简历"),
+    email: local("Email", "邮箱"),
+    elsewhere: local("Elsewhere", "其他平台"),
+    basedIn: local("Based in", "所在地"),
+    scrollTop: local("Back to top", "返回顶部"),
+  },
+  hero: {
+    src: "/media/hero.jpg",
+    type: "image",
+    alt: local("Yixuan Guo in graduation gown at City University of Hong Kong", "郭一萱港城大毕业照"),
+    objectPosition: "left center",
+    overlay: 0.2,
+  },
+  work: [
+    {
+      slug: "course-practice",
+      title: local("Creative Media Coursework", "创意媒体课程实践"),
+      meta: local("CityU MFA · Visual design, installation, interactive web", "港城大硕士 · 视觉设计、装置、AI"),
+      summary: local("Cross-media visual design and AI creative experiments.", "跨媒介视觉设计与AI创意实验"),
+      detailSummary: local("In the CityU Creative Media program, I practiced using visual and spatial language to respond to social issues: from the argumentative logic of academic posters, to the on-site narrative of spatial installations, to generating motion graphics and interactive prototypes with AI tools. Each project was a complete loop from research to realization.", "在港城大创意媒体项目里，我练习用视觉和空间语言回应社会议题：从学术海报的论证逻辑，到线下展览的现场叙事，再到用AI工具生成动态影像和互动原型。每一个项目都是一次从研究到落地的完整闭环。"),
+      tools: local("Tools: Figma, Lovert, Gemini, ChatGPT, Sora, Luma, Kimi, Ps, Canva, Pr, 剪映", "工具：Figma, Lovert, Gemini, ChatGPT, Sora, Luma, Kimi, Ps, Canva, Pr, 剪映"),
+      year: "2025-2026",
+      media: {
+        src: "/media/course-practice-new.jpg",
+        type: "image",
+        alt: local("Creative Media Coursework", "创意媒体课程实践"),
+      },
+      gallery: [],
+      sections: [
+        {
+          title: local("Poster Design", "海报设计"),
+          description: local("Posters designed for research projects and creative works.", "为研究项目与创意作品设计的海报"),
+          media: [
+            { src: "/media/course-poster-1.jpg", type: "image", alt: local("Trust in the Wrong Turn: Navigation Dependency Research", "Trust in the Wrong Turn：导航依赖研究") },
+            { src: "/media/course-poster-2.jpg", type: "image", alt: local("The Failed Realism of IKEA Showrooms", "The Failed Realism：宜家展厅研究") },
+            { src: "/media/course-poster-3.jpg", type: "image", alt: local("On-Chain Identity: Pixels Research", "On-Chain Identity：Pixels链上身份研究") },
+            { src: "/media/course-poster-4.jpg", type: "image", alt: local("Training Manual: Merit Prime Planet", "Training Manual：Merit Prime Planet居民手册"), size: "small" },
+            { src: "/media/course-poster-5.jpg", type: "image", alt: local("Mountain@", "Mountain@ 雪山艺术海报"), size: "small" },
+            { src: "/media/course-exhibit-promo.jpg", type: "image", alt: local("IKEA My Table: Solo Living Poster", "IKEA My Table：独居生活海报"), size: "small" },
+          ],
+        },
+        {
+          title: local("Exhibition Design", "展览装置"),
+          description: local("Personally designed, built and installed interactive exhibitions.", "本人设计、制作与现场布置的互动展览装置"),
+          media: [
+            { src: "/media/course-exhibit-1.jpg", type: "image", alt: local("Wheel of Worlds: Multicultural Interactive Wheel", "Wheel of Worlds：多元文化职业互动转盘") },
+            { src: "/media/course-exhibit-2.jpg", type: "image", alt: local("Chimera: Pedigree Cat Breeding Critique", "Chimera：病态宠物审美批判") },
+            { src: "/media/course-exhibit-3.jpg", type: "image", alt: local("How Long Since You Slept Well", "多久没睡过一个好觉：睡眠主题装置") },
+            { src: "/media/course-exhibit-4.jpg", type: "image", alt: local("IKEA Showrooms Research Exhibition", "IKEA展厅研究展") },
+          ],
+        },
+        {
+          title: local("Class Research", "课堂研究"),
+          description: local("In-class research presentation", "课堂研究PPT汇报"),
+          media: [
+            { src: "/media/course-ppt-1.png", type: "image", alt: local("Spider-Man: Linework & NPR Rendering", "蜘蛛侠：线条与NPR渲染分析") },
+            { src: "/media/course-ppt-2.png", type: "image", alt: local("Spider-Man: Color & Lighting Breakdown", "蜘蛛侠：色彩与光影拆解") },
+            { src: "/media/course-ppt-3.png", type: "image", alt: local("Color Theory in Animation", "动画色彩理论研究") },
+            { src: "/media/course-ppt-4.png", type: "image", alt: local("Motion Design Case Study", "动态设计案例研究") },
+          ],
+        },
+        {
+          title: local("Illustration", "插图作品"),
+          description: local("Designed and illustrated independently.", "本人独立设计与绘制"),
+          media: [
+            { src: "/media/course-illustration-1.jpg", type: "image", alt: local("Illustration 1", "插图1") },
+            { src: "/media/course-illustration-2.jpg", type: "image", alt: local("Illustration 2", "插图2") },
+            { src: "/media/course-illustration-3.jpg", type: "image", alt: local("Illustration 3", "插图3") },
+          ],
+        },
+        {
+          title: local("Video Works", "视频作品"),
+          description: local("Course videos.", "课程视频作品"),
+          media: [
+            { src: "/video-covers/01-course-interactive-nav.jpg", type: "image", alt: local("Interactive Video: Navigation Trust Test", "互动视频：导航信任测试"), href: "https://b23.tv/A4RmKUB" },
+            { src: "/video-covers/02-course-ai-poster.jpg", type: "image", alt: local("AI Dynamic Poster", "AI动态海报"), href: "#" },
+            { src: "/video-covers/03-course-ai-chat-research.jpg", type: "image", alt: local("AI Chat Software Research", "AI聊天软件研究"), href: "#" },
+            { src: "/video-covers/04-course-ai-planet.jpg", type: "image", alt: local("AI Generated: Planet Simulation", "AI生成素材：星球模拟"), href: "#" },
+            { src: "/video-covers/05-course-3d-scan.jpg", type: "image", alt: local("3D Scan: A Dog's Day", "3D扫描：A Dog's Day"), href: "#" },
+            { src: "/video-covers/06-course-game-pixels.jpg", type: "image", alt: local("Game Research: Pixels", "游戏研究：Pixels"), href: "#" },
+          ],
+        },
+      ],
+    },
+    {
+      slug: "hanfu-contest",
+      title: local("Sohu · Liyi Huaxia Hanfu Model Contest", "搜狐「礼衣华夏汉服模特大赛」"),
+      meta: local("Sohu Video · Vertical operations", "搜狐视频 · 垂类运营"),
+      summary: local("China's leading guofeng event with 100M+ reach.", "国内头部国风赛事，全网曝光破亿"),
+      detailSummary: local("As part of Sohu's guofeng operations team, I supported the full-cycle launch of one of China's most influential hanfu competitions. On top of daily community management for 500k+ users across vertical interest circles, my work spanned the whole operation: designing 15 poster templates, producing 70+ promo videos, planning recurring community activities and livestreams, coordinating KOL and artist communications, managing on-site event logistics across Suzhou, Wuhan, Yanqing and Sichuan, and turning livestream footage into post-event content. I also attended the Sohu Video Attention Flow Conference, working alongside celebrities and content creators with tens of millions of followers. This was not just social media work—it was end-to-end production of a national-scale cultural event.", "作为搜狐国风运营组的一员，我参与了这个国内顶级汉服赛事的全周期运营。日常还负责50w+用户垂类圈子的内容加精、评论维护与Push运营。同时覆盖赛事全链路：设计15版海报模板、制作70+宣发视频、策划日常圈子活动与直播、对接KOL与艺人、统筹苏州/武汉/延庆/四川四地现场执行，再到赛后内容二次加工。我还参加了搜狐视频关注流大会，与数千万关注度的明星和内容创作者并肩协作，同时负责主舞台国风节目的音控与直播监测。这不是简单的内容运营，而是一次全国级文化活动从线上到线下的全流程操盘。"),
+      year: "2026",
+      media: {
+        src: "/media/hanfu-new.jpg",
+        type: "image",
+        alt: local("Sohu · Liyi Huaxia Hanfu Model Contest", "搜狐「礼衣华夏汉服模特大赛」"),
+      },
+      detailBackground: "#E8F0E4",
+      gallery: [],
+      sections: [
+        {
+          title: local("Promotional Posters", "宣发海报"),
+          description: local("Posters covering region announcements, guest reveals, results and live events.", "覆盖赛区官宣、嘉宾官宣、获奖结果、直播宣发的海报设计"),
+          media: [
+            { src: "/media/hanfu-poster-3.jpg", type: "image", alt: local("Event Schedule Poster", "赛事赛程海报") },
+            { src: "/media/hanfu-poster-8.jpg", type: "image", alt: local("Putian Top 10 Contestants", "十强选手名单") },
+            { src: "/media/hanfu-poster-6.jpg", type: "image", alt: local("Central China Region Wuhan Final", "直播开屏图") },
+            { src: "/media/hanfu-poster-4.jpg", type: "image", alt: local("Star Guest Lineup", "汉服区明星空降阵容") },
+            { src: "/media/hanfu-poster-1.jpg", type: "image", alt: local("Hanfu Outfit Analysis Post", "汉服穿搭解析海报") },
+            { src: "/media/hanfu-poster-2.jpg", type: "image", alt: local("East China Region Guest Announcement", "嘉宾阵容官宣图") },
+            { src: "/media/hanfu-poster-5.jpg", type: "image", alt: local("Not Swordsman Stage Live", "舞台直播海报") },
+            { src: "/media/hanfu-poster-7.jpg", type: "image", alt: local("East China Celebrity Guest Lineup", "华东赛区明星嘉宾阵容官宣") },
+            { src: "/media/hanfu-poster-9.jpg", type: "image", alt: local("Top 100 Hanfu Creator Award", "百大播主获奖感言") },
+            { src: "/media/hanfu-poster-10.jpg", type: "image", alt: local("Celebrity Onboarding Poster", "大咖入驻图") },
+          ],
+        },
+        {
+          title: local("Event Planning", "活动策划"),
+          description: local("Responsible for community activity planning, poster design and execution.", "负责圈子日常周期活动策划、海报设计与流程执行"),
+          media: [
+            { src: "/media/hanfu-activity-1.jpg", type: "image", alt: local("Hanfu Bilingual Creator 10th Anniversary Campaign", "汉服播主庆英语课十周年应援行动") },
+            { src: "/media/hanfu-activity-3.jpg", type: "image", alt: local("Flower Goddess Spring Festival Campaign", "花神赴春关主题活动") },
+            { src: "/media/hanfu-activity-2.jpg", type: "image", alt: local("2026 Autumn Sohu Follow Stream Event", "2026秋季搜狐视频关注流大会") },
+          ],
+        },
+        {
+          title: local("On-site Venue", "线下场地"),
+          description: local("Participated in venue design and on-site setup across 4 regional finals.", "参与四大赛区场地设计和现场布置"),
+          layout: "grid",
+          media: [
+            { src: "/media/hanfu-venue-1.jpg", type: "image", alt: local("Yanqing Region", "延庆赛区") },
+            { src: "/media/hanfu-venue-2.jpg", type: "image", alt: local("Stage Award Ceremony", "舞台颁奖现场") },
+            { src: "/media/hanfu-venue-3.jpg", type: "image", alt: local("East China Region Mall Setup", "华东赛区") },
+            { src: "/media/hanfu-venue-4.jpg", type: "image", alt: local("Interactive Exhibition Area Design", "展区设计") },
+            { src: "/media/hanfu-backstage-1.jpg", type: "image", alt: local("Stage Sound Control", "负责晚会舞台音控") },
+            { src: "/media/hanfu-backstage-2.jpg", type: "image", alt: local("KOL Coordination & Shooting", "负责达人商务对接和拍摄") },
+          ],
+        },
+        {
+          title: local("Promo Videos", "宣发视频"),
+          description: local("Event highlights and guest shout-out videos.", "活动精彩回顾与嘉宾打call视频"),
+          media: [
+            { src: "/video-covers/07-hanfu-event-recap.jpg", type: "image", alt: local("Event Highlights Recap", "活动精彩回顾"), href: "#" },
+            { src: "/video-covers/08-hanfu-guest-shoutout.jpg", type: "image", alt: local("Guest Shout-out", "嘉宾打call"), href: "#" },
+          ],
+        },
+      ],
+    },
+    {
+      slug: "overseas-social",
+      title: local("Overseas Social Media Matrix", "海外社媒短视频矩阵"),
+      meta: local("The ONE Music · TikTok / Instagram", "小叶子音乐 · TikTok / Instagram"),
+      summary: local("Overseas operations for a Chinese music education brand.", "中国音乐教育产品的海外运营"),
+      detailSummary: local("During my internship at The ONE Music, I ran the overseas social media strategy for TikTok, Instagram and Facebook—producing 50+ short videos, managing KOL collaborations with 30+ overseas creators, collecting 80+ user insights, and running UGC campaigns for The ONE Sing and The ONE Piano. This role taught me how a Chinese music education brand grows internationally: not just posting content, but understanding what users feel, what creators need, and how data loops back to shape better products and marketing.", "在小叶子科技实习期间，我负责The ONE智能钢琴在TikTok、Instagram、Facebook的海外社媒运营：累计产出50+条短视频，独立对接30+位海外KOL并输出标准化合作brief，沉淀80+条用户反馈反馈产品痛点，同时围绕The ONE Sing和The ONE Piano开展UGC运营与数据复盘。这段经历让我理解了中国品牌出海不只是发内容，而是真正听懂用户在说什么、创作者需要什么，再把数据反馈变成更好的产品和营销。"),
+      year: "2026",
+      media: {
+        src: "/media/one-music-new.jpg",
+        type: "image",
+        objectPosition: "center top",
+        alt: local("TikTok account screenshot", "TikTok账号截图"),
+      },
+      sections: [
+        {
+          title: local("Instagram Content", "Instagram作品"),
+          description: local("Short video content produced for the Instagram account.", "为Instagram账号制作的短视频内容"),
+          media: [
+            { src: "/media/work-overseas.jpg", type: "image", alt: local("Instagram Account Overview", "Instagram账号主页") },
+            { src: "/video-covers/09-ins-product-showcase.jpg", type: "image", alt: local("Product Showcase", "产品展示"), href: "#" },
+            { src: "/video-covers/10-ins-creator-remix-1.jpg", type: "image", alt: local("Creator Remix", "红人二创1"), href: "#" },
+            { src: "/video-covers/11-ins-creator-remix-2.jpg", type: "image", alt: local("Creator Remix", "红人二创2"), href: "#" },
+          ],
+        },
+        {
+          title: local("TikTok Content", "TikTok作品"),
+          description: local("Short video content produced for the TikTok account.", "为TikTok账号制作的短视频内容"),
+          media: [
+            { src: "/media/lab-tiktok.jpg", type: "image", alt: local("TikTok Account Overview", "TikTok账号主页") },
+            { src: "/video-covers/12-tiktok-product-showcase.jpg", type: "image", alt: local("Product Showcase", "产品展示"), href: "#" },
+            { src: "/video-covers/13-tiktok-fyp-feed.jpg", type: "image", alt: local("For You Page Feed", "瀑布流"), href: "#" },
+            { src: "/video-covers/14-tiktok-viral-trend.jpg", type: "image", alt: local("Viral Trend", "网络热梗"), href: "#" },
+          ],
+        },
+      ],
+    },
+    {
+      slug: "journalism",
+      title: local("News & New Media Operations", "新闻采编与新媒体运营"),
+      meta: local("Hebei Youth Daily · Reporter", "河北青年报 · 记者"),
+      summary: local("Feature stories and tourism series in print and digital.", "社会新闻和高校活动策划"),
+      detailSummary: local("During my internship at Hebei Youth Daily, I worked as a reporter and new media operator. I independently planned stories from social issues to tourism features, conducted field interviews, and produced content across print, WeChat Official Account and Video Account—with top articles reaching 400k+ reads. I also handled public opinion monitoring, participated in bidding proposals for 200k-level projects, and built training curriculum for crisis communication. This experience trained me in the full pipeline from pitching to publishing, across words, photos and video.", "在河青报实习期间，我作为记者和新媒体运营，独立完成社会、文旅类选题策划与实地采访，内容覆盖纸媒、公众号、视频号三端，公众号单篇最高阅读40万+。同时负责日常舆情监测与信息研判，参与河北彩票20万级投标项目方案撰写，并搭建舆情管理培训课程体系。这段经历训练了我从选题到发稿的完整新闻生产能力，横跨文字、图片与视频多种媒介。"),
+      year: "2024",
+      media: {
+        src: "/media/journalism-new.jpg",
+        type: "image",
+        alt: local("News & New Media Operations", "新闻采编与新媒体运营"),
+      },
+      sections: [
+        {
+          title: local("WeChat Official Account", "公众号文章"),
+          description: local("Published articles on the Hebei Youth Daily WeChat account.", "在河北青年报公众号发布的原创与编辑文章"),
+          media: [
+            { src: "/media/news-2.jpg", type: "image", alt: local("WeChat Account Feed", "公众号首页矩阵") },
+            { src: "/media/news-3.jpg", type: "image", alt: local("Sun Yingsha Olympic Feature", "孙颖莎奥运专题") },
+            { src: "/media/news-7.jpg", type: "image", alt: local("WeChat Account Feed", "公众号热点文章") },
+            { src: "/media/news-8.jpg", type: "image", alt: local("Hebei Tourism & Celebrity News", "文旅与娱乐资讯") },
+            { src: "/media/news-9.jpg", type: "image", alt: local("Court Judgment Report", "法治新闻报道") },
+            { src: "/media/news-10.jpg", type: "image", alt: local("Rural Girl Admitted to Peking University", "人物专访：圆梦北大") },
+            { src: "/media/news-11.jpg", type: "image", alt: local("Public Welfare & Social News", "社会民生与公益") },
+          ],
+        },
+        {
+          title: local("Print Newspaper", "报纸版面"),
+          description: local("Stories published in the print edition of Hebei Youth Daily.", "在河北青年报纸媒发表的报道版面"),
+          media: [
+            { src: "/media/news-12.jpg", type: "image", alt: local("Paris Olympics Mixed Doubles Spread", "巴黎奥运混双专题版面") },
+            { src: "/media/news-13.jpg", type: "image", alt: local("Leukemia Girl Rescue Campaign", "白血病女孩救助专题版面") },
+          ],
+        },
+        {
+          title: local("Video Account", "视频号"),
+          description: local("Short videos produced for the Hebei Youth Daily Video Account.", "为河北青年报视频号拍摄制作的短视频"),
+          media: [
+            { src: "/media/news-1.jpg", type: "image", alt: local("Shijiazhuang Skyline", "社会民生：城市风景") },
+            { src: "/media/news-4.jpg", type: "image", alt: local("Hefei Earthquake Teacher Heroism", "社会热点：地震逆行") },
+            { src: "/media/news-5.jpg", type: "image", alt: local("Friendship & Farewell", "社会民生：人间真情") },
+          ],
+        },
+      ],
+    },
+    {
+      slug: "emotion-bottle",
+      title: local("Interactive Web Prototypes", "网页交互原型合集"),
+      meta: local("Independent web experiments · Solo", "独立网页实验 · 独立完成"),
+      summary: local("Three independent interactive web experiments.", "三个独立完成的网页交互实验"),
+      detailSummary: local("These are three web interactive experiments I built independently: an emotion-and-memory themed music player, a self-deprecating intelligent customer service, and a planet academic identity simulator. They explore different themes but ask the same question—can a webpage be more than a functional page, and become a digital work that tells a story through interaction?", "这是我独立完成的三个网页交互实验：从情绪与记忆主题的音乐播放器，到一个带着自嘲精神的智能客服，再到星球学术身份模拟器。三个项目主题不同，但都在探索同一件事——网页不只是功能页面，而是能用交互讲一个故事的数字作品。"),
+      tools: local("Tools: ChatGPT, Codex, Gemini, Figma", "工具：ChatGPT, Codex, Gemini, Figma"),
+      year: "2026",
+      media: {
+        src: "/media/work-emotion-bottle.png",
+        type: "image",
+        alt: local("Emotion paper star music bottle UI", "情绪纸星音乐瓶界面"),
+      },
+      sections: [
+        {
+          title: local("Emotion Paper Star Music Bottle", "情绪纸星音乐瓶"),
+          description: local("An interactive music player prototype created for the Tencent Music AI Hackathon. Users fold an emotion paper star, place it into the music bottle, and a timeline of personal memories unlocks—blending emotion, memory and music into one immersive experience.", "为腾讯音乐AI Hackathon独立开发的交互音乐播放器。用户将情绪折成纸星放入音乐瓶，时间轴随之展开私人记忆，把情绪、记忆与音乐融合成一次沉浸式体验"),
+          media: [
+            { src: "/video-covers/21-music-bottle.png", type: "image", alt: local("Music Bottle Interface — Click to Try ↗", "音乐瓶界面 — 点击在线体验 ↗"), href: "https://yixuang67-ship-it.github.io/emotion-paper-star-music-bottle/" },
+          ],
+        },
+        {
+          title: local("The Worst Intelligent Customer Service", "史上最难用智能客服"),
+          description: local("A satirical take on customer service chatbots. The interface deliberately mimics the frustrating, multi-step, jargon-heavy flow people hate—turning everyday pain points into an interactive commentary on UX design.", "一个反讽智能客服的交互作品。界面故意复刻用户最讨厌的多层跳转、术语轰炸和无效流程，把日常吐槽变成一场关于交互设计的行为艺术"),
+          media: [
+            { src: "/video-covers/22-web-customer-service.jpg", type: "image", alt: local("Click to Try ↗", "点击在线体验 ↗"), href: "https://ynx2003.github.io/The-useless-Intelligent-Customer-Service/" },
+          ],
+        },
+        {
+          title: local("Merit Archive", "Merit Archive"),
+          description: local("A digital archive experiment exploring academic identity—what traces do we leave in institutional systems, and how do we curate our own scholarly self?", "一个关于学术身份的数字档案实验。我们在体制系统中留下了哪些痕迹？又该如何亲手整理属于自己的学术自我？"),
+          media: [
+            { src: "/video-covers/15-emotion-demo.png", type: "image", alt: local("Demo Walkthrough — Click to Try ↗", "产品演示视频 — 点击在线体验 ↗"), href: "https://meritarchive-dpxgtdgn.manus.space/" },
+          ],
+        },
+      ],
+    },
+  ],
+  lab: [
+    {
+      slug: "ads-and-variety",
+      title: local("Campus Life", "校园经历"),
+      meta: local("Hebei University · Stage, Competition & Leadership", "河北大学 · 舞台、比赛与学生工作"),
+      summary: local("Four years of stage performances, competition wins and campus leadership.", "四年舞台演出、比赛获奖与学生工作经历"),
+      detailSummary: local("Across four years at Hebei University, I wore many hats: class arts committee member, guitar club department head, Honor campus ambassador, flag guard training instructor, and more. I led our class choir to first prize, reached the national finals of the National College Advertising Competition, and won second prize at the university level in the China College Students' Entrepreneurship Plan Contest. On stage, I performed solo and with the band at festivals and galas; behind the scenes, I planned and ran events end to end. These experiences built my ability to create, organize, and lead a project from idea to execution.", "在河北大学的四年里，我身兼数职：班级文艺委员、吉他社部长、荣耀校园大使、国旗护卫队军训教官等。带队拿下校级合唱比赛一等奖，入围全国大学生广告艺术大赛决赛，获中国大学生创业计划竞赛校级二等奖。舞台上，我以个人和乐队身份登上音乐节与晚会；舞台下，我从策划到执行统筹落地一场活动。这些经历让我具备了从创意构思到带队落地的完整能力。"),
+      year: "2022–2025",
+      media: {
+        src: "/media/campus-new.jpg",
+        type: "image",
+        alt: local("Campus music festival performance", "校园音乐节乐队演出"),
+      },
+      sections: [
+        {
+          title: local("Advertising & Film", "广告与影视实践"),
+          description: local("Creative ad work that reached national finals, and a campus variety show.", "入围国赛的创意广告与校园观察综艺拍摄"),
+          media: [
+            { src: "/video-covers/20-daguangsai-999.jpg", type: "image", alt: local("999 Ganmaoling On Set — Click to Try ↗", "999感冒灵拍摄现场 — 点击查看完整作品 ↗"), href: "https://my.feishu.cn/file/SmAOb4XYlodrndxJhJPcIQiznnc" },
+            { src: "/media/campus-variety.jpg", type: "image", alt: local("Who is the Undercover Variety", "校园综艺《谁是卧底》") },
+            { src: "/media/ads-shuanghui.jpg", type: "image", alt: local("Shuanghui On Set", "双汇广告拍摄现场") },
+          ],
+        },
+        {
+          title: local("Stage Planning & Performance", "舞台策划和演出"),
+          description: local("Solo and band performances, plus stage management as head of the stage department.", "个人及乐队现场演出，以及担任舞台部部长的舞台统筹工作"),
+          media: [
+            { src: "/media/campus-band.jpg", type: "image", alt: local("Band Leader for 3 Years", "担任3年乐队队长") },
+            { src: "/media/campus-music-festival.jpg", type: "image", alt: local("Campus Music Festival", "校园音乐节乐队演出") },
+            { src: "/media/campus-graduation.jpg", type: "image", alt: local("Graduation Gala", "毕业晚会乐队演出") },
+            { src: "/media/campus-gala.jpg", type: "image", alt: local("Anniversary Gala", "校庆晚会演出") },
+            { src: "/media/campus-club.jpg", type: "image", alt: local("Club Performance", "社团演出") },
+          ],
+        },
+        {
+          title: local("Competition & Awards", "比赛获奖"),
+          description: local("Led the class choir as arts committee member to first place.", "作为文艺委员带队参加校级合唱比赛获一等奖"),
+          media: [
+            { src: "/media/campus-choir.jpg", type: "image", alt: local("Choral Competition First Prize", "校级合唱比赛一等奖") },
+          ],
+        },
+        {
+          title: local("Campus Leadership & Roles", "学生工作与实践"),
+          description: local("From brand campus ambassador to military training instructor and event lead.", "从品牌校园大使到国旗护卫队军训教官、活动负责人"),
+          media: [
+            { src: "/media/campus-honor.jpg", type: "image", alt: local("Honor Phone Campus Ambassador", "荣耀手机校园大使") },
+            { src: "/media/campus-flag.jpg", type: "image", alt: local("Flag Guard Training Instructor", "国旗护卫队军训教官") },
+            { src: "/media/campus-dabing.jpg", type: "image", alt: local("Dabing's Hut Campus Tour, Event Lead", "大冰的小屋·百城百校音乐会 河北大学站 活动负责人") },
+          ],
+        },
+        {
+          title: local("Industry Exploration", "行业探索"),
+          description: local("Passed the vocal audition at a Beijing music company.", "通过北京雨乐音乐娱乐公司歌手面试"),
+          media: [
+            { src: "/media/campus-interview.jpg", type: "image", alt: local("Yule Music Audition", "雨乐音乐歌手面试") },
+          ],
+        },
+      ],
+      presentation: "card",
+    },
+    {
+      slug: "photography",
+      title: local("Photography", "摄影"),
+      meta: local("Landscape & street", "风景与随拍"),
+      summary: local("Everyday moments of light and emotion.", "日常光影与情绪记录"),
+      detailSummary: local("The camera is how I observe the world. From the vastness of grasslands to a cat by the window, from fireworks over Disney to a sunset by the sea—I record the wonderful moments of life in my own way.", "镜头是我观察世界的方式。从草原的辽阔到窗边的猫咪，从迪士尼夜空的烟花到海边的落日，我用我的方式记录生活的精彩瞬间。"),
+      year: "2024-2026",
+      media: {
+        src: "/media/photo-1.jpg",
+        type: "image",
+        alt: local("Photography collection", "摄影作品"),
+      },
+      sections: [
+        {
+          title: local("Photography", "摄影"),
+          description: local("", ""),
+          media: [
+            { src: "/media/photo-1.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-2.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-3.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-4.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-5.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-6.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-7.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-8.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-9.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-10.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-11.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-12.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-13.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-14.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-15.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-grassland.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-16.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-17.jpg", type: "image", alt: local("", "") },
+            { src: "/media/photo-18.jpg", type: "image", alt: local("", "") },
+          ],
+        },
+      ],
+      presentation: "card",
+    },
+    {
+      slug: "music",
+      title: local("Music Performance", "音乐演奏"),
+      meta: local("Piano & guitar", "钢琴与吉他"),
+      summary: local("Piano performance and guitar singing.", "钢琴演奏与吉他弹唱"),
+      detailSummary: local("Piano and guitar have accompanied me throughout school—from being a keyboardist and vocalist in my university band to playing and singing on my own now. Music has always been the most direct way for me to express emotion.", "钢琴和吉他陪伴了我整个学生时代，从大学乐队的主唱键盘手到现在的日常弹唱，音乐始终是我表达情绪最直接的出口。"),
+      year: "2021-2026",
+      media: {
+        src: "/video-covers/16-music-piano-1.jpg",
+        type: "image",
+        alt: local("Piano performance", "钢琴演奏"),
+      },
+      gallery: [
+        { src: "/video-covers/16-music-piano-1.jpg", type: "image", alt: local("Piano performance 1", "钢琴演奏1"), href: "#" },
+        { src: "/video-covers/17-music-guitar-1.jpg", type: "image", alt: local("Guitar singing 1", "吉他弹唱1"), href: "#" },
+        { src: "/video-covers/18-music-guitar-2.jpg", type: "image", alt: local("Guitar singing 2", "吉他弹唱2"), href: "#" },
+        { src: "/video-covers/19-music-piano-2.jpg", type: "image", alt: local("Piano performance 2", "钢琴演奏2"), href: "#" },
+      ],
+      externalLinks: [
+        { label: local("WeChat Channels", "视频号主页"), href: "https://weixin.qq.com/sph/AODBk1L2j" },
+      ],
+      presentation: "card",
+    },
+  ],
+  about: {
+    statement: local(
+      "Cross-disciplinary creator: journalism × creative media × user, product & growth operations.\n\nFrom deep news reporting to guofeng community operations, from overseas social media strategy to campus band stages.\n\nInto anime and traditional Chinese style, rock and classical, Western pop and Chinese ballads — my interests are all over the place, and that's exactly where my best ideas come from.\n\nAlways learning, always growing.",
+      "跨领域创作者：新闻学 × 创意媒体 × 用户/产品/市场运营\n\n写过深度新闻报道，做过国风社区运营，操盘过海外社媒矩阵，也站过校园乐队的舞台。\n\n爱动漫也爱国风，爱摇滚也爱古典，爱欧美也爱国语——我的兴趣超级广泛，而这些反差正是我灵感的来源。\n\n一直在学习，一直在进步。"
+    ),
+  },
+  resume: {
+    mode: "shared",
+    shared: "/resume/resume.pdf",
+  },
+  contact: {
+    phone: "15531498891",
+    wechat: "xxmint0818",
+    socials: [
+      { label: local("Xiaohongshu", "小红书"), href: "https://www.xiaohongshu.com/user/profile/6109ff71000000000101d978" },
+      { label: local("WeChat Channels", "视频号"), href: "https://weixin.qq.com/sph/AODBk1L2j" },
+    ],
+    copyrightName: local("Yixuan Guo", "郭一萱"),
+    credit: local("Designed and built with care", "认真设计与搭建"),
+  },
+  palette: {
+    id: "lazy-liberty",
+    light: {
+      background: "#E8CEC8",
+      foreground: "#241E24",
+      muted: "#C8B8D9",
+      mutedForeground: "#60545F",
+      border: "#D1B7B5",
+      accent: "#9CD9C9",
+      accentForeground: "#17312B",
+      darkBand: "#201C27",
+      darkBandForeground: "#F4EDEF",
+    },
+    dark: {
+      background: "#000000",
+      foreground: "#F0E6D8",
+      muted: "#000000",
+      mutedForeground: "#8A7E8E",
+      border: "#2A2A2A",
+      accent: "#E8C5D0",
+      accentForeground: "#000000",
+      darkBand: "#000000",
+      darkBandForeground: "#F0E6D8",
+    },
+  },
+};
