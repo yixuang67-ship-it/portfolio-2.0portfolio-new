@@ -309,6 +309,7 @@ export const siteContent: SiteContent = {
           description: local("A digital archive experiment exploring academic identity—what traces do we leave in institutional systems, and how do we curate our own scholarly self?", "一个关于学术身份的数字档案实验。我们在体制系统中留下了哪些痕迹？又该如何亲手整理属于自己的学术自我？"),
           media: [
             { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/%E6%88%90%E5%99%A8%E6%98%9Fdemo.mp4", type: "video", poster: "/video-covers/15-emotion-demo.png", alt: local("Merit Archive Demo", "Merit Archive 产品演示") },
+            { src: "/video-covers/15-emotion-demo.png", type: "image", alt: local("Click to Try Live Demo ↗", "点击在线体验Demo ↗"), href: "https://meritarchive-dpxgtdgn.manus.space/" },
           ],
         },
       ],
@@ -423,9 +424,9 @@ export const siteContent: SiteContent = {
       detailSummary: local("Piano and guitar have accompanied me throughout school—from being a keyboardist and vocalist in my university band to playing and singing on my own now. Music has always been the most direct way for me to express emotion.", "钢琴和吉他陪伴了我整个学生时代，从大学乐队的主唱键盘手到现在的日常弹唱，音乐始终是我表达情绪最直接的出口。"),
       year: "2021-2026",
       media: {
-        src: "/video-covers/16-music-piano-1.jpg",
+        src: "/media/music-new.jpg",
         type: "image",
-        alt: local("Piano performance", "钢琴演奏"),
+        alt: local("Music Performance", "音乐演奏"),
       },
       gallery: [
         { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/%E9%92%A2%E7%90%B41.mp4", type: "video", poster: "/video-covers/16-music-piano-1.jpg", alt: local("Piano performance 1", "钢琴演奏1") },
