@@ -121,7 +121,7 @@ export const siteContent: SiteContent = {
           title: local("Video Works", "视频作品"),
           description: local("Course videos.", "课程视频作品"),
           media: [
-            { src: "https://b23.tv/A4RmKUB", type: "image", poster: "/video-covers/01-course-interactive-nav.jpg", alt: local("Interactive Video: Navigation Trust Test", "互动视频：导航信任测试"), href: "https://b23.tv/A4RmKUB" },
+            { src: "/video-covers/01-course-interactive-nav.jpg", type: "image", alt: local("Interactive Video: Navigation Trust Test", "互动视频：导航信任测试"), href: "https://b23.tv/A4RmKUB" },
             { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/02-course-ai-poster.mp4", type: "video", poster: "/video-covers/02-course-ai-poster.jpg", alt: local("AI Dynamic Poster", "AI动态海报") },
             { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/03-course-ai-chat-research.mp4", type: "video", poster: "/video-covers/03-course-ai-chat-research.jpg", alt: local("AI Chat Software Research", "AI聊天软件研究") },
             { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/04-course-ai-planet.mp4", type: "video", poster: "/video-covers/04-course-ai-planet.jpg", alt: local("AI Generated: Planet Simulation", "AI生成素材：星球模拟") },
