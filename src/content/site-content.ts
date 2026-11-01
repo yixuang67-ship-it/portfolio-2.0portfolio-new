@@ -308,8 +308,7 @@ export const siteContent: SiteContent = {
           title: local("Merit Archive", "Merit Archive"),
           description: local("A digital archive experiment exploring academic identity—what traces do we leave in institutional systems, and how do we curate our own scholarly self?", "一个关于学术身份的数字档案实验。我们在体制系统中留下了哪些痕迹？又该如何亲手整理属于自己的学术自我？"),
           media: [
-            { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/%E6%88%90%E5%99%A8%E6%98%9Fdemo.mp4", type: "video", poster: "/video-covers/15-emotion-demo.png", alt: local("Merit Archive Demo", "Merit Archive 产品演示") },
-            { src: "/video-covers/15-emotion-demo.png", type: "image", alt: local("Click to Try Live Demo ↗", "点击在线体验Demo ↗"), href: "https://meritarchive-dpxgtdgn.manus.space/" },
+            { src: "https://portfolio-videos.oss-cn-beijing.aliyuncs.com/%E6%88%90%E5%99%A8%E6%98%9Fdemo.mp4", type: "video", poster: "/video-covers/15-emotion-demo.png", alt: local("Merit Archive Demo — Click to Try ↗", "Merit Archive 产品演示 — 点击在线体验 ↗"), href: "https://meritarchive-dpxgtdgn.manus.space/" },
           ],
         },
       ],
