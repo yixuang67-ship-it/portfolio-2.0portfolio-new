@@ -26,6 +26,7 @@ function DetailMedia({ media, locale }: { media: MediaAsset; locale: Locale }) {
         <video
           className="detail-media-element"
           src={media.src}
+          poster={media.poster}
           controls
           playsInline
           preload="metadata"
